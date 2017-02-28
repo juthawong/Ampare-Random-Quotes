@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded',function(){
   "citation":['Treehouse Video','Juthawong Naisanguansee after introduce to stranger','In the news , Thai Politician son Shoot Stranger at The Club','My Father drinking chinese tea in morning','Wordpress Forum'],
   "year":[2015,2013,2010,2008,2009],
   "tags":['education','business','crime','family','quote']
-}; //
+}; 
 var firstload = true; //To check whether it does thing like First load without reload page after click Play again
 var backgroundcolordefa = ["#2ecc71","#e74c3c","#3498db"];
 
