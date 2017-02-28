@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',function(){
-  //Prevent Noobs From Changing Variable
+  //Prevent Noobs From Changing Variable From console by putting it inside function
   let quotes = {"quote":['Mike The Frog','This is Juthawong!','Do you know my father?','Many have plan but not many execute it','Code is poem'],
   "source":['Ajarn Mike at Treehouse','Juthawong Naisanguansee','Thai Politician Son' ,'My Father','Some developer on internet'],
   "citation":['Treehouse Video','Juthawong Naisanguansee after introduce to stranger','In the news , Thai Politician son Shoot Stranger at The Club','My Father drinking chinese tea in morning','Wordpress Forum'],
@@ -8,8 +8,7 @@ document.addEventListener('DOMContentLoaded',function(){
 }; //
 var firstload = true; //To check whether it does thing like First load without reload page after click Play again
 var backgroundcolordefa = ["#2ecc71","#e74c3c","#3498db"];
-// event listener to respond to "Show another quote" button clicks
-// when user clicks anywhere on the button, the "printQuote" function is called
+
 function randomQuote (){
   let rand = Math.floor(Math.random() * quotes.quote.length);
   let tmpquote = Object.create(quotes);
@@ -60,6 +59,8 @@ firstload = true;
 }
 }
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+  // event listener to respond to "Show another quote" button clicks
+// when user clicks anywhere on the button, the "printQuote" function is called
 printQuote(); //Load Quote at init
 setInterval(printQuote,30000); //Change Quote Every 30 Second
 });
