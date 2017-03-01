@@ -13,8 +13,7 @@ document.addEventListener('DOMContentLoaded',function(){
   // event listener to respond to "Show another quote" button clicks
   // when user clicks anywhere on the button, the "printQuote" function is called
   function randomQuote (){
-    let rand = Math.floor(Math.random() * quotes.length);
-    return  quotes.splice(rand,1)[0];
+    return  quotes.splice(Math.floor(Math.random() * quotes.length);,1)[0]; //One lIner , Return Of Splice Value is array that has object inside. To return object directly , I select the first array index.
   }
 
   function getRandomQuote(){
