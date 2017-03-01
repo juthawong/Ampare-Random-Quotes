@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',function(){
-    //Prevent Noobs From Changing Variable using Console
+    //Prevent Noobs From Changing Variable using Console by putting it inside function
   let quotes = [{"quote":"Mike The Frog","source":'Ajarn Mike at Treehouse',"citation":"Treehouse Video","Date":2015,"tags":"Education"}
     ,{"quote":"This is Juthawong!","source":'Juthawong Naisanguansee',"citation":"Juthawong Naisanguansee after introduce to stranger","Date":2013,"tags":"Business"}
     ,{"quote":"Do you know my father?","source":'Thai Politician Son',"citation":"In the news , Thai Politician son Shoot Stranger at The Club","Date":2010,"tags":"Crime"}
