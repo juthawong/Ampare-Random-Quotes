@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded',function(){
     ,{"quote":"Do you know my father?","source":'Thai Politician Son',"citation":"In the news , Thai Politician son Shoot Stranger at The Club","Date":2010,"tags":"Crime"}
     ,{"quote":"Many have plan but not many execute it","source":'My Father',"citation":"My Father drinking chinese tea in morning","Date":2008,"tags":"Family"}
     ,{"quote":"Code is Poem","source":'Some developer on internet',"citation":"Wordpress Forum","Date":2009,"tags":"Quotes"}
-  ]; //Chane From Array inside object to Object inside array as Requirement say. :) . Change Property name Year To Date
+  ]; //Change From Array inside object to Object inside array as Requirement say. :) . Change Property name Year To Date
 
 
   var firstload = true; //To check whether it does thing like First load without reload page after click Play again
