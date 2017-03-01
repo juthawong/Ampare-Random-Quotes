@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',function(){
-    //Prevent Noobs From Changing Variable
+    //Prevent Noobs From Changing Variable using Console
   let quotes = [{"quote":"Mike The Frog","source":'Ajarn Mike at Treehouse',"citation":"Treehouse Video","Date":2015,"tags":"Education"}
     ,{"quote":"This is Juthawong!","source":'Juthawong Naisanguansee',"citation":"Juthawong Naisanguansee after introduce to stranger","Date":2013,"tags":"Business"}
     ,{"quote":"Do you know my father?","source":'Thai Politician Son',"citation":"In the news , Thai Politician son Shoot Stranger at The Club","Date":2010,"tags":"Crime"}
@@ -10,8 +10,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
   var firstload = true; //To check whether it does thing like First load without reload page after click Play again
   var backgroundcolordefa = ["#2ecc71","#e74c3c","#3498db"];
-  // event listener to respond to "Show another quote" button clicks
-  // when user clicks anywhere on the button, the "printQuote" function is called
+
   function randomQuote (){
     return  quotes.splice(Math.floor(Math.random() * quotes.length),1)[0]; //One line , Random Index of Quotes and Remove it using splice , Return Of Splice Value is array that has object inside. To return object directly , I select the first array index.
   }
@@ -57,6 +56,8 @@ document.addEventListener('DOMContentLoaded',function(){
   }
 
   document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+      // event listener to respond to "Show another quote" button clicks
+  // when user clicks anywhere on the button, the "printQuote" function is called
   printQuote(); //Load Quote at init
   setInterval(printQuote,30000); //Change Quote Every 30 Second
 
